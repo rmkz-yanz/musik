@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Music</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Add New Music</h1>
+    <form action="/add" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="title">Song Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div>
+            <label for="music">Music File:</label>
+            <input type="file" id="music" name="music" accept="audio/*" required>
+        </div>
+        <div>
+            <label for="filename">File Name (without extension):</label>
+            <input type="text" id="filename" name="filename" required>
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+        </div>
+        <button type="submit">Add Music</button>
+    </form>
+</body>
+</html>
